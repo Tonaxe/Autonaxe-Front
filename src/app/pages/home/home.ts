@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
+import { Footer } from '../../shared/footer/footer';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-home',
-  standalone: false,
+  standalone: true,
   templateUrl: './home.html',
-  styleUrl: './home.scss'
+  styleUrls: ['./home.scss'],
+  imports: [CommonModule, Footer]
 })
-export class Home {
-
-}
+export class Home {}

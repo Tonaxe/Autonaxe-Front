@@ -1,19 +1,11 @@
 import { Routes } from '@angular/router';
+import { Home } from './pages/home/home';
+import { Login } from './pages/auth/login/login';
+import { Register } from './pages/auth/register/register';
 
 export const routes: Routes = [
-  {
-    path: '',
-    loadChildren: () =>
-      import('./pages/public/public-module').then(m => m.PublicModule)
-  },
-  {
-    path: 'auth',
-    loadChildren: () =>
-      import('./pages/auth/auth.module').then(m => m.AuthModule)
-  },
-  {
-    path: '**',
-    redirectTo: '',
-    pathMatch: 'full'
-  }
+  { path: '', component: Home },
+  { path: 'auth/login', component: Login },
+  { path: 'auth/register', component: Register },
+  { path: '**', redirectTo: '' }
 ];

@@ -1,12 +1,12 @@
 <header class="main-header">
   <div class="container">
     <div class="logo">
-      <a routerLink="/">
-        <img src="assets/logoTexto.png" alt="Autonaxe Logo" />
+      <a routerLink="/" aria-label="Ir al inicio">
+        <img src="assets/logoTexto.png" alt="Autonaxe - Gestión para autónomos" />
       </a>
     </div>
 
-    <nav class="nav-links">
+    <nav class="nav-links" aria-label="Navegación principal">
       <a href="#features">Funcionalidades</a>
       <a href="#how-it-works">Cómo funciona</a>
       <a href="#faq">FAQ</a>
@@ -17,5 +17,31 @@
       <a routerLink="/auth/login" class="btn btn--ghost">Acceder</a>
       <a routerLink="/auth/register" class="btn btn--primary">Registrarse</a>
     </div>
+
+    <button class="menu-toggle"
+            (click)="toggleMenu()"
+            aria-label="Abrir menú móvil"
+            [attr.aria-expanded]="isMenuOpen"
+            aria-controls="mobileDropdown">
+      <i class="fas" [ngClass]="isMenuOpen ? 'fa-times' : 'fa-bars'"></i>
+    </button>
   </div>
 </header>
+
+<div class="dropdown-wrapper" *ngIf="menuVisible">
+  <div class="backdrop" [class.open]="isMenuOpen" (click)="toggleMenu()" aria-hidden="true"></div>
+
+  <nav class="dropdown" [class.open]="isMenuOpen" id="mobileDropdown" aria-label="Menú móvil desplegable">
+    <ul>
+      <li><a href="#features" (click)="toggleMenu()">Funcionalidades</a></li>
+      <li><a href="#how-it-works" (click)="toggleMenu()">Cómo funciona</a></li>
+      <li><a href="#faq" (click)="toggleMenu()">FAQ</a></li>
+      <li><a href="#contact" (click)="toggleMenu()">Ayuda</a></li>
+    </ul>
+
+    <div class="dropdown-buttons">
+      <a routerLink="/auth/login" class="btn full btn--ghost" (click)="toggleMenu()">Acceder</a>
+      <a routerLink="/auth/register" class="btn full btn--primary" (click)="toggleMenu()">Registrarse</a>
+    </div>
+  </nav>
+</div>

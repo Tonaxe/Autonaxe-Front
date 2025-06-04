@@ -14,8 +14,10 @@
     align-items: center;
     gap: $spacing-lg;
 
-    .logo img {
-      height: 30px;
+    .logo {
+      img {
+        height: 30px;
+      }
     }
 
     .nav-links {
@@ -41,25 +43,6 @@
     .actions {
       display: flex;
       gap: $spacing-sm;
-
-      .btn--ghost {
-        border: 1px solid $color-primary;
-        color: $color-primary;
-        background: transparent;
-        border-radius: 6px;
-        padding: 0.4rem 1rem;
-        font-weight: 600;
-        text-decoration: none;
-      }
-
-      .btn--primary {
-        background: $color-primary;
-        color: white;
-        border-radius: 6px;
-        padding: 0.4rem 1rem;
-        font-weight: 600;
-        text-decoration: none;
-      }
 
       @include respond(sm) {
         display: none;
@@ -157,18 +140,18 @@
           border-radius: 6px;
           text-decoration: none;
         }
-
-        .btn--ghost {
-          border: 1px solid $color-primary;
-          color: $color-primary;
-          background: transparent;
-        }
-
-        .btn--primary {
-          background: $color-primary;
-          color: white;
-        }
       }
     }
   }
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
 }

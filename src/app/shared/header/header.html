@@ -18,11 +18,8 @@
       <a routerLink="/auth/register" class="btn btn--primary">Registrarse</a>
     </div>
 
-    <button class="menu-toggle"
-            (click)="toggleMenu()"
-            aria-label="Abrir menú móvil"
-            [attr.aria-expanded]="isMenuOpen"
-            aria-controls="mobileDropdown">
+    <button class="menu-toggle" (click)="toggleMenu()" aria-label="Abrir menú móvil" [attr.aria-expanded]="isMenuOpen"
+      aria-controls="mobileDropdown">
       <i class="fas" [ngClass]="isMenuOpen ? 'fa-times' : 'fa-bars'"></i>
     </button>
   </div>

@@ -1,0 +1,26 @@
+@use '../../../../styles/index.scss' as *;
+
+.login-container {
+  @include card;
+  max-width: 400px;
+  margin: $spacing-xl auto;
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-lg;
+
+  h2 {
+    text-align: center;
+    color: $color-primary;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-md;
+  }
+
+  button[type='submit'] {
+    @extend .btn;
+    @extend .btn--primary;
+  }
+}

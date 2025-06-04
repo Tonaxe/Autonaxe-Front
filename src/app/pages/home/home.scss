@@ -1,0 +1,93 @@
+@use '../../../styles/index.scss' as *;
+
+.hero {
+  background: linear-gradient(120deg, $color-primary 0%, $color-secondary 100%);
+  color: white;
+  padding: 4rem 2rem;
+  text-align: center;
+
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+
+    span {
+      color: $color-accent;
+    }
+  }
+
+  p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto 2rem;
+  }
+
+  .btn-primary {
+    @extend .btn;
+    @extend .btn--primary;
+    font-size: 1.1rem;
+  }
+}
+
+.features {
+  padding: 3rem 2rem;
+  text-align: center;
+
+  h2 {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+  }
+
+  .feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: $spacing-lg;
+    margin-top: 2rem;
+
+    .feature {
+      background: $color-light;
+      padding: $spacing-lg;
+      border-radius: $radius-lg;
+      box-shadow: $shadow-lg;
+
+      h3 {
+        color: $color-primary;
+        margin-bottom: 0.5rem;
+      }
+    }
+  }
+}
+
+.cta-final {
+  background: $color-primary-light;
+  padding: 3rem 2rem;
+  text-align: center;
+
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .btn-secondary {
+    @extend .btn;
+    @extend .btn--secondary;
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
+}
+
+footer {
+  background: $color-dark;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+
+  a {
+    color: $color-accent;
+    margin: 0 0.5rem;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

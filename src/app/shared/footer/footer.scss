@@ -1,0 +1,18 @@
+@use '../../../styles/index.scss' as *;
+
+.footer {
+  background: $color-dark;
+  color: white;
+  text-align: center;
+  padding: $spacing-md;
+
+  a {
+    color: $color-accent;
+    margin: 0 0.5rem;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

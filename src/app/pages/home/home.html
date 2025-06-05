@@ -4,22 +4,31 @@
   <div class="hero-content container">
     <img src="assets/logoIcono.png" alt="Logotipo de Autonaxe" class="hero-logo animate-on-scroll" loading="eager"
       decoding="async" />
-    <h1 id="hero-title" class="animate-on-scroll">Tu gestoría online, sin costes ni complicaciones</h1>
-    <p class="animate-on-scroll">Gestiona tu actividad como autónomo con facilidad: facturas, modelos, clientes y
-      asesoramiento en un solo lugar.</p>
+    <h1 id="hero-title" class="animate-on-scroll">
+      Tu gestoría online 100% gratis para autónomos, sin líos ni costes ocultos
+    </h1>
+    <p class="animate-on-scroll">
+      Gestiona tu actividad como autónomo con facilidad: facturas, modelos, clientes y asesoramiento en un solo lugar.
+    </p>
     <a routerLink="/auth/register" class="btn btn--white animate-on-scroll"
-      aria-label="Empieza gratis con Autonaxe">Empieza gratis</a>
+      aria-label="Registrarse gratis en Autonaxe como autónomo">
+      Empieza gratis
+    </a>
   </div>
 </header>
 
-<section class="trust-logos" aria-label="Logotipos de plataformas de confianza">
+<section class="trust-logos" aria-labelledby="trust-logos-title">
   <div class="container">
-    <p class="subtitle">Diseñado para ayudarte a crecer. Confianza, automatización y tranquilidad.</p>
-    <div class="logos" role="group" aria-label="Logos de confianza">
-      <img src="assets/logos/aeat.svg" alt="Agencia Tributaria" class="animate-on-scroll" loading="lazy" />
-      <img src="assets/logos/stripe.svg" alt="Stripe" class="animate-on-scroll" loading="lazy" />
-      <img src="assets/logos/trello.svg" alt="Trello" class="animate-on-scroll" loading="lazy" />
-      <img src="assets/logos/google-workspace.svg" alt="Google Workspace" class="animate-on-scroll" loading="lazy" />
+    <p id="trust-logos-title" class="subtitle">
+      Diseñado para ayudarte a crecer. Confianza, automatización y tranquilidad.
+    </p>
+    <div class="logos" role="group" aria-label="Plataformas de confianza asociadas">
+      <img src="assets/logos/aeat.svg" alt="Logo Agencia Tributaria" class="animate-on-scroll" loading="lazy"
+        decoding="async" />
+      <img src="assets/logos/stripe.svg" alt="Logo Stripe" class="animate-on-scroll" loading="lazy" decoding="async" />
+      <img src="assets/logos/trello.svg" alt="Logo Trello" class="animate-on-scroll" loading="lazy" decoding="async" />
+      <img src="assets/logos/google-workspace.svg" alt="Logo Google Workspace" class="animate-on-scroll" loading="lazy"
+        decoding="async" />
     </div>
   </div>
 </section>
@@ -30,17 +39,17 @@
     <p class="subtitle animate-on-scroll">Gestiona tu día a día sin dolores de cabeza ni papeleo.</p>
     <div class="feature-grid">
       <article class="feature animate-on-scroll">
-        <img src="assets/icons/factura.svg" alt="Icono de factura" />
+        <img src="assets/icons/factura.svg" alt="Icono de factura" loading="lazy" decoding="async" />
         <h3>Facturación inteligente</h3>
         <p>Emite facturas con diseño moderno, automatiza pagos y notificaciones.</p>
       </article>
       <article class="feature animate-on-scroll">
-        <img src="assets/icons/hacienda.svg" alt="Icono de Hacienda" />
+        <img src="assets/icons/hacienda.svg" alt="Icono de trámites con Hacienda" loading="lazy" decoding="async" />
         <h3>Trámites con Hacienda</h3>
         <p>Presenta modelos como 303 o 130 sin errores, con validación automática.</p>
       </article>
       <article class="feature animate-on-scroll">
-        <img src="assets/icons/clientes.svg" alt="Icono de clientes" />
+        <img src="assets/icons/clientes.svg" alt="Icono de gestión de clientes" loading="lazy" decoding="async" />
         <h3>Clientes organizados</h3>
         <p>Centraliza presupuestos, datos y facturas de todos tus clientes.</p>
       </article>
@@ -80,7 +89,10 @@
     <p class="cta-subtitle animate-on-scroll">
       Regístrate gratis y empieza a facturar, presentar modelos y recibir ayuda personalizada hoy mismo.
     </p>
-    <a routerLink="/auth/register" class="btn btn--cta animate-on-scroll">Crear cuenta gratuita</a>
+    <a routerLink="/auth/register" class="btn btn--cta animate-on-scroll"
+      aria-label="Crear cuenta gratuita en Autonaxe">
+      Crear cuenta gratuita
+    </a>
   </div>
 </section>
 
@@ -88,10 +100,10 @@
   <div class="container">
     <h2 id="testimonials-title" class="animate-on-scroll">Lo que dicen nuestros usuarios</h2>
     <div class="testimonial-grid">
-      <article class="testimonial animate-on-scroll" aria-label="Testimonio de Laura">
-        <div class="testimonial-icon">“</div>
-        <p>Con Autonaxe presento mis modelos sin pensar. Todo automático y sencillo.</p>
-        <div class="stars" aria-label="5 estrellas">
+      <article class="testimonial animate-on-scroll" aria-labelledby="testimonial-laura">
+        <div class="testimonial-icon" aria-hidden="true">“</div>
+        <p id="testimonial-laura">Con Autonaxe presento mis modelos sin pensar. Todo automático y sencillo.</p>
+        <div class="stars" aria-label="Valoración: 5 estrellas">
           <i class="fas fa-star animate-star-fall" aria-hidden="true" style="--i:1;"></i>
           <i class="fas fa-star animate-star-fall" aria-hidden="true" style="--i:2;"></i>
           <i class="fas fa-star animate-star-fall" aria-hidden="true" style="--i:3;"></i>
@@ -101,10 +113,10 @@
         <span class="author">Laura</span>
         <small class="role">Diseñadora freelance</small>
       </article>
-      <article class="testimonial animate-on-scroll" aria-label="Testimonio de David">
-        <div class="testimonial-icon">“</div>
-        <p>He ahorrado horas de gestiones. Ahora todo está en un solo lugar.</p>
-        <div class="stars" aria-label="5 estrellas">
+      <article class="testimonial animate-on-scroll" aria-labelledby="testimonial-david">
+        <div class="testimonial-icon" aria-hidden="true">“</div>
+        <p id="testimonial-david">He ahorrado horas de gestiones. Ahora todo está en un solo lugar.</p>
+        <div class="stars" aria-label="Valoración: 5 estrellas">
           <i class="fas fa-star animate-star-fall" aria-hidden="true" style="--i:1;"></i>
           <i class="fas fa-star animate-star-fall" aria-hidden="true" style="--i:2;"></i>
           <i class="fas fa-star animate-star-fall" aria-hidden="true" style="--i:3;"></i>
@@ -124,7 +136,7 @@
     <div class="faq-list">
       <details class="animate-on-scroll">
         <summary>
-          <span class="faq-icon"><i class="fas fa-question-circle"></i></span>
+          <span class="faq-icon"><i class="fas fa-question-circle" aria-hidden="true"></i></span>
           <span class="faq-question">¿Autonaxe es gratis de verdad?</span>
         </summary>
         <p>Sí, puedes usar Autonaxe sin pagar nada. Todas las funcionalidades esenciales son completamente gratuitas y
@@ -132,7 +144,7 @@
       </details>
       <details class="animate-on-scroll">
         <summary>
-          <span class="faq-icon"><i class="fas fa-file-invoice"></i></span>
+          <span class="faq-icon"><i class="fas fa-file-invoice" aria-hidden="true"></i></span>
           <span class="faq-question">¿Puedo presentar modelos como el 303?</span>
         </summary>
         <p>Por supuesto. Generamos y presentamos modelos oficiales como el 303, 130 o 390 con validaciones automáticas y
@@ -140,7 +152,7 @@
       </details>
       <details class="animate-on-scroll">
         <summary>
-          <span class="faq-icon"><i class="fas fa-user"></i></span>
+          <span class="faq-icon"><i class="fas fa-user" aria-hidden="true"></i></span>
           <span class="faq-question">¿Necesito ser experto en contabilidad?</span>
         </summary>
         <p>No. Autonaxe está diseñado para que cualquier autónomo gestione su actividad sin conocimientos técnicos ni
@@ -148,14 +160,14 @@
       </details>
       <details class="animate-on-scroll">
         <summary>
-          <span class="faq-icon"><i class="fas fa-mobile-alt"></i></span>
+          <span class="faq-icon"><i class="fas fa-mobile-alt" aria-hidden="true"></i></span>
           <span class="faq-question">¿Funciona desde el móvil o tablet?</span>
         </summary>
         <p>Por supuesto. Autonaxe es una plataforma web responsive que puedes usar desde cualquier dispositivo.</p>
       </details>
       <details class="animate-on-scroll">
         <summary>
-          <span class="faq-icon"><i class="fas fa-lock"></i></span>
+          <span class="faq-icon"><i class="fas fa-lock" aria-hidden="true"></i></span>
           <span class="faq-question">¿Están mis datos seguros?</span>
         </summary>
         <p>Absolutamente. Aplicamos cifrado, copias de seguridad y cumplimiento legal (RGPD) para proteger tu
@@ -168,12 +180,15 @@
 <section class="cta-final" aria-labelledby="cta-title">
   <div class="container">
     <h2 id="cta-title" class="animate-on-scroll">Empieza gratis con Autonaxe y simplifica tu vida como autónomo</h2>
-    <ul class="cta-benefits animate-on-scroll" aria-label="Ventajas de Autonaxe">
-      <li><i class="fas fa-check-circle"></i> Sin necesidad de tarjeta bancaria</li>
-      <li><i class="fas fa-bolt"></i> Acceso inmediato a todas las funcionalidades</li>
-      <li><i class="fas fa-user-slash"></i> Puedes darte de baja en cualquier momento</li>
+    <ul class="cta-benefits animate-on-scroll" aria-label="Lista de ventajas de usar Autonaxe">
+      <li><i class="fas fa-check-circle" aria-hidden="true"></i> Sin necesidad de tarjeta bancaria</li>
+      <li><i class="fas fa-bolt" aria-hidden="true"></i> Acceso inmediato a todas las funcionalidades</li>
+      <li><i class="fas fa-user-slash" aria-hidden="true"></i> Puedes darte de baja en cualquier momento</li>
     </ul>
-    <a routerLink="/auth/register" class="btn btn--primary animate-on-scroll">Crear cuenta gratuita</a>
+    <a routerLink="/auth/register" class="btn btn--primary animate-on-scroll"
+      aria-label="Registrarse ahora gratis en Autonaxe">
+      Crear cuenta gratuita
+    </a>
   </div>
 </section>
 

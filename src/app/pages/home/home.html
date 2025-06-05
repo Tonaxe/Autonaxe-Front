@@ -1,58 +1,194 @@
 <app-header></app-header>
 
 <header class="hero" aria-labelledby="hero-title">
-  <div class="hero-content">
-    <h1 id="hero-title">Gestiona tu vida de autónomo con <span>Autonaxe</span></h1>
-    <p>Todo lo que necesitas para facturar, presentar modelos, gestionar clientes y recibir asesoría, en una sola plataforma profesional.</p>
-    <a href="/auth/register" class="btn btn--primary">Empieza gratis</a>
+  <div class="hero-content container">
+    <img src="assets/logoIcono.png" alt="Autonaxe Logo" class="hero-logo" />
+    <h1 id="hero-title">Tu gestoría online, sin costes ni complicaciones</h1>
+    <p>Gestiona tu actividad como autónomo con facilidad: facturas, modelos, clientes y asesoramiento en un solo lugar.
+    </p>
+    <a routerLink="/auth/register" class="btn btn--primary">Empieza gratis</a>
   </div>
 </header>
 
-<section class="trust-badges" aria-label="Clientes satisfechos">
-  <p>Ya confían en Autonaxe más de <strong>12.000 autónomos</strong> en toda España</p>
+<section class="trust-logos" aria-label="Confianza en crecimiento">
+  <div class="container">
+    <p class="subtitle">Diseñado para ayudarte a crecer. Confianza, automatización y tranquilidad.</p>
+    <div class="logos">
+      <img src="assets/logos/aeat.svg" alt="AEAT" />
+      <img src="assets/logos/stripe.svg" alt="Stripe" />
+      <img src="assets/logos/trello.svg" alt="Trello" />
+      <img src="assets/logos/google-workspace.svg" alt="Google Workspace" />
+    </div>
+  </div>
 </section>
 
 <section class="features" aria-labelledby="features-title">
-  <h2 id="features-title">¿Qué puedes hacer con Autonaxe?</h2>
-  <p>Una solución todo-en-uno pensada para simplificar tu trabajo como autónomo y ayudarte a cumplir con Hacienda sin complicaciones.</p>
+  <div class="container">
+    <h2 id="features-title">Todo lo que puedes hacer con Autonaxe</h2>
+    <p class="subtitle">Gestiona tu día a día sin dolores de cabeza ni papeleo.</p>
 
-  <div class="feature-grid">
-    <article class="feature">
-      <h3>🧾 Facturación profesional</h3>
-      <p>Emite facturas con diseño personalizado, controla cobros y automatiza los recordatorios de pago.</p>
-    </article>
+    <div class="feature-grid">
+      <article class="feature">
+        <img src="assets/icons/factura.svg" alt="Factura" />
+        <h3>Facturación inteligente</h3>
+        <p>Emite facturas con diseño moderno, automatiza pagos y notificaciones.</p>
+      </article>
 
-    <article class="feature">
-      <h3>📄 Trámites fiscales fáciles</h3>
-      <p>Genera modelos como el 303, 130 o 390 y preséntalos sin errores ni cálculos manuales.</p>
-    </article>
+      <article class="feature">
+        <img src="assets/icons/hacienda.svg" alt="Hacienda" />
+        <h3>Trámites con Hacienda</h3>
+        <p>Presenta modelos como 303 o 130 sin errores, con validación automática.</p>
+      </article>
 
-    <article class="feature">
-      <h3>👥 Gestión de clientes</h3>
-      <p>Ten el historial completo de tus clientes, presupuestos, facturas y observaciones en un solo lugar.</p>
-    </article>
-
-    <article class="feature">
-      <h3>💬 Asesoramiento en vivo</h3>
-      <p>Recibe soporte en tiempo real de nuestro equipo especializado en autónomos y fiscalidad.</p>
-    </article>
+      <article class="feature">
+        <img src="assets/icons/clientes.svg" alt="Clientes" />
+        <h3>Clientes organizados</h3>
+        <p>Centraliza presupuestos, datos y facturas de todos tus clientes.</p>
+      </article>
+    </div>
   </div>
 </section>
 
 <section class="how-it-works" aria-labelledby="workflow-title">
-  <h2 id="workflow-title">¿Cómo funciona?</h2>
-  <ol>
-    <li><strong>Regístrate gratis</strong> en menos de un minuto.</li>
-    <li><strong>Crea tu primera factura</strong> o añade tus clientes actuales.</li>
-    <li><strong>Conecta tus obligaciones</strong> fiscales y gestiona tus modelos sin miedo.</li>
-    <li><strong>Habla con un asesor</strong> si necesitas ayuda en cualquier paso.</li>
-  </ol>
+  <div class="container">
+    <h2 id="workflow-title">¿Cómo funciona Autonaxe?</h2>
+    <ol>
+      <li>
+        <span class="step-number">1</span>
+        <p><strong>Regístrate gratis</strong> y accede en segundos a tu panel de autónomo.</p>
+      </li>
+      <li>
+        <span class="step-number">2</span>
+        <p><strong>Crea tu primera factura</strong> o importa tus datos fácilmente.</p>
+      </li>
+      <li>
+        <span class="step-number">3</span>
+        <p><strong>Presenta modelos fiscales</strong> como el 303 o el 130 sin errores.</p>
+      </li>
+      <li>
+        <span class="step-number">4</span>
+        <p><strong>Consulta con un asesor</strong> y resuelve tus dudas en cualquier momento.</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<section class="cta-inline" aria-labelledby="cta-inline-title">
+  <div class="container">
+    <h2 id="cta-inline-title">
+      ¿Listo para olvidarte del papeleo y centrarte en hacer crecer tu negocio?
+    </h2>
+    <p class="cta-subtitle">
+      Regístrate gratis y empieza a facturar, presentar modelos y recibir ayuda personalizada hoy mismo.
+    </p>
+    <a routerLink="/auth/register" class="btn btn--cta">Crear cuenta gratuita</a>
+  </div>
+</section>
+
+<section class="testimonials" aria-labelledby="testimonials-title">
+  <div class="container">
+    <h2 id="testimonials-title">Lo que dicen nuestros usuarios</h2>
+
+    <div class="testimonial-grid">
+      <article class="testimonial">
+        <div class="testimonial-icon">“</div>
+        <p>Con Autonaxe presento mis modelos sin pensar. Todo automático y sencillo.</p>
+        <div class="stars" aria-label="5 de 5 estrellas">
+          <i class="fas fa-star" aria-hidden="true"></i>
+          <i class="fas fa-star" aria-hidden="true"></i>
+          <i class="fas fa-star" aria-hidden="true"></i>
+          <i class="fas fa-star" aria-hidden="true"></i>
+          <i class="fas fa-star" aria-hidden="true"></i>
+        </div>
+        <span class="author">Laura</span>
+        <small class="role">Diseñadora freelance</small>
+      </article>
+
+      <article class="testimonial">
+        <div class="testimonial-icon">“</div>
+        <p>He ahorrado horas de gestiones. Ahora todo está en un solo lugar.</p>
+        <div class="stars" aria-label="5 de 5 estrellas">
+          <i class="fas fa-star" aria-hidden="true"></i>
+          <i class="fas fa-star" aria-hidden="true"></i>
+          <i class="fas fa-star" aria-hidden="true"></i>
+          <i class="fas fa-star" aria-hidden="true"></i>
+          <i class="fas fa-star" aria-hidden="true"></i>
+        </div>
+        <span class="author">David</span>
+        <small class="role">Fotógrafo autónomo</small>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="faq" aria-labelledby="faq-title">
+  <div class="container">
+    <h2 id="faq-title">Preguntas frecuentes</h2>
+
+    <div class="faq-list">
+      <details>
+        <summary>
+          <span class="faq-icon"><i class="fas fa-question-circle"></i></span>
+          <span class="faq-question">¿Autonaxe es gratis de verdad?</span>
+        </summary>
+        <p>Sí, puedes usar Autonaxe sin pagar nada. Todas las funcionalidades esenciales son completamente gratuitas y sin compromiso.</p>
+      </details>
+
+      <details>
+        <summary>
+          <span class="faq-icon"><i class="fas fa-file-invoice"></i></span>
+          <span class="faq-question">¿Puedo presentar modelos como el 303?</span>
+        </summary>
+        <p>Por supuesto. Generamos y presentamos modelos oficiales como el 303, 130 o 390 con validaciones automáticas y soporte profesional.</p>
+      </details>
+
+      <details>
+        <summary>
+          <span class="faq-icon"><i class="fas fa-user"></i></span>
+          <span class="faq-question">¿Necesito ser experto en contabilidad?</span>
+        </summary>
+        <p>No. Autonaxe está diseñado para que cualquier autónomo gestione su actividad sin conocimientos técnicos ni contables.</p>
+      </details>
+
+      <details>
+        <summary>
+          <span class="faq-icon"><i class="fas fa-mobile-alt"></i></span>
+          <span class="faq-question">¿Funciona desde el móvil o tablet?</span>
+        </summary>
+        <p>Por supuesto. Autonaxe es una plataforma web responsive que puedes usar desde cualquier dispositivo.</p>
+      </details>
+
+      <details>
+        <summary>
+          <span class="faq-icon"><i class="fas fa-lock"></i></span>
+          <span class="faq-question">¿Están mis datos seguros?</span>
+        </summary>
+        <p>Absolutamente. Aplicamos cifrado, copias de seguridad y cumplimiento legal (RGPD) para proteger tu información.</p>
+      </details>
+    </div>
+  </div>
 </section>
 
 <section class="cta-final" aria-labelledby="cta-title">
-  <h2 id="cta-title">Empieza gratis con Autonaxe</h2>
-  <p>Sin tarjetas. Sin compromisos. Solo tu negocio, organizado y libre de estrés.</p>
-  <a href="/auth/register" class="btn btn--secondary">Crear cuenta gratuita</a>
+  <div class="container">
+    <h2 id="cta-title">
+      Empieza gratis con Autonaxe y simplifica tu vida como autónomo
+    </h2>
+
+    <ul class="cta-benefits" aria-label="Ventajas de Autonaxe">
+      <li>
+        <i class="fas fa-check-circle"></i> Sin necesidad de tarjeta bancaria
+      </li>
+      <li>
+        <i class="fas fa-bolt"></i> Acceso inmediato a todas las funcionalidades
+      </li>
+      <li>
+        <i class="fas fa-user-slash"></i> Puedes darte de baja en cualquier momento
+      </li>
+    </ul>
+
+    <a routerLink="/auth/register" class="btn btn--primary">Crear cuenta gratuita</a>
+  </div>
 </section>
 
 <app-footer></app-footer>

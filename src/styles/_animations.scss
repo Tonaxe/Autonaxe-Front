@@ -1,0 +1,77 @@
+@use 'sass:math';
+@use 'variables' as *;
+
+@keyframes fadeSlideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes starFall {
+    0% {
+        transform: translate(-40px, -40px) rotate(-45deg);
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translate(0, 0) rotate(360deg);
+        opacity: 1;
+    }
+}
+
+@keyframes dropdownFade {
+    0% {
+        max-height: 0;
+        opacity: 0;
+    }
+
+    100% {
+        max-height: 500px;
+        opacity: 1;
+    }
+}
+
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+
+    &.in-view {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-star-fall {
+    opacity: 0;
+    animation: starFall 1s ease-out forwards;
+}
+
+.falling-stars i {
+    display: inline-block;
+    animation: starFall 1s ease-out forwards;
+    animation-delay: calc(0.1s * var(--i));
+    opacity: 0;
+}
+
+.dropdown-animated {
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    transition: max-height 0.4s ease, opacity 0.4s ease;
+
+    &.open {
+        max-height: 500px;
+        opacity: 1;
+    }
+}

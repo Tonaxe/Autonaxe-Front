@@ -39,6 +39,17 @@
     }
   }
 
+  &--white {
+    background-color: $color-light;
+    color: $color-primary;
+    padding: $spacing-sm $spacing-lg;
+
+    &:hover {
+      background-color: lighten(white, 3%);
+      transform: translateY(-2px);
+    }
+  }
+
   &--ghost {
     background: transparent;
     color: $color-primary;

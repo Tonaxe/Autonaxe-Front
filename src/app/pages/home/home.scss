@@ -57,7 +57,7 @@
     margin: 0 auto;
 
     .hero-logo {
-      height: 210px;
+      height: 160px;
       margin-bottom: $spacing-md;
     }
 
@@ -367,7 +367,7 @@
 }
 
 .cta-final {
-  background: linear-gradient(135deg, $color-primary 0%, $color-secondary 100%);
+  background: linear-gradient(135deg, $color-primary 0%, $color-accent 100%);
   color: white;
   text-align: center;
   padding: $spacing-xl $spacing-md;

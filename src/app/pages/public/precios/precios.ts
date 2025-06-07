@@ -4,13 +4,13 @@ import { Header } from '../../../shared/header/header';
 import { Footer } from '../../../shared/footer/footer';
 
 @Component({
-  selector: 'app-help',
+  selector: 'app-precios',
   standalone: true,
   imports: [CommonModule, Header, Footer],
-  templateUrl: './help.html',
-  styleUrls: ['./help.scss']
+  templateUrl: './precios.html',
+  styleUrls: ['./precios.scss']
 })
-export class Help implements AfterViewInit {
+export class Precios implements AfterViewInit {
   constructor(private renderer: Renderer2, private el: ElementRef) { }
 
   ngAfterViewInit(): void {
@@ -54,9 +54,9 @@ export class Help implements AfterViewInit {
     {
       "@context": "https://schema.org",
       "@type": "WebPage",
-      "name": "Centro de ayuda de Autonaxe",
-      "description": "Centro de ayuda de Autonaxe. Encuentra respuestas, guías y soporte para gestionar tu facturación, impuestos, gastos y toda tu actividad como autónomo en España.",
-      "url": "https://www.autonaxe.com/help",
+      "name": "Precios de Autonaxe",
+      "description": "Autonaxe es 100% gratis para autónomos en España. No hay costes ocultos ni suscripciones. Descubre qué incluye el plan gratuito y cómo puedes apoyar el proyecto.",
+      "url": "https://www.autonaxe.com/precios",
       "about": {
         "@type": "Thing",
         "name": "Autonaxe - Plataforma de gestión para autónomos",

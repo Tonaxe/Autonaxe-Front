@@ -1,0 +1,129 @@
+@use '../../../../styles/index.scss' as *;
+
+.pricing-page {
+    padding: $spacing-xxl 0;
+    background-color: $color-light-bg;
+    text-align: center;
+
+    h1 {
+        font-size: 2.4rem;
+        color: $color-primary;
+        margin-bottom: $spacing-md;
+    }
+
+    .section-subtitle {
+        font-size: 1.2rem;
+        color: $color-text-secondary;
+        margin-bottom: $spacing-xl;
+        max-width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .pricing-grid {
+        display: flex;
+        justify-content: center;
+        margin-bottom: $spacing-xl;
+
+        .pricing-card {
+            background: $color-surface;
+            border-radius: $border-radius-lg;
+            box-shadow: $shadow-lg;
+            padding: $spacing-xl $spacing-lg;
+            max-width: 400px;
+            text-align: left;
+
+            .plan-title {
+                font-size: 1.8rem;
+                color: $color-title;
+                margin-bottom: $spacing-sm;
+            }
+
+            .plan-price {
+                font-size: 2rem;
+                color: $color-primary;
+                font-weight: bold;
+                margin-bottom: $spacing-sm;
+            }
+
+            .plan-subtitle {
+                font-size: 1rem;
+                color: $color-text-light;
+                margin-bottom: $spacing-lg;
+            }
+
+            .feature-list {
+                list-style: none;
+                padding: 0;
+                margin: 0 0 $spacing-lg 0;
+
+                li {
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: $spacing-sm;
+                    font-size: 1rem;
+                    color: $color-text-secondary;
+
+                    i {
+                        color: $color-success;
+                        margin-right: $spacing-sm;
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+
+            .cta {
+                text-align: center;
+
+                .btn {
+                    padding: $spacing-sm $spacing-lg;
+                    font-size: 1rem;
+                    border-radius: $border-radius;
+                }
+            }
+        }
+    }
+
+    .donate-section {
+        max-width: 600px;
+        margin: 0 auto $spacing-xl auto;
+        text-align: center;
+        line-height: 1.6;
+
+        h2 {
+            font-size: 1.4rem;
+            color: $color-title;
+            margin-bottom: $spacing-sm;
+        }
+
+        p {
+            color: $color-text-secondary;
+            margin-bottom: $spacing-md;
+        }
+
+        .donate-cta {
+            margin-bottom: $spacing-sm;
+
+            .btn {
+                padding: $spacing-sm $spacing-lg;
+                font-size: 1rem;
+                border-radius: $border-radius;
+            }
+
+            .donate-note {
+                font-size: 0.9rem;
+                color: $color-text-light;
+            }
+        }
+    }
+
+    .cta-final {
+        margin-top: $spacing-xl;
+
+        .btn {
+            padding: $spacing-sm $spacing-lg;
+            font-size: 1rem;
+            border-radius: $border-radius;
+        }
+    }
+}

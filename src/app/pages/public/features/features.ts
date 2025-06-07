@@ -11,7 +11,7 @@ import { Footer } from '../../../shared/footer/footer';
   styleUrls: ['./features.scss']
 })
 export class Features implements AfterViewInit {
-  constructor(private renderer: Renderer2, private el: ElementRef) {}
+  constructor(private renderer: Renderer2, private el: ElementRef) { }
 
   ngAfterViewInit(): void {
     this.observeScrollAnimations();

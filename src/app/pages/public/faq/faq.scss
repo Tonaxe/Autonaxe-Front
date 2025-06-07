@@ -1,0 +1,74 @@
+@use '../../../../styles/index.scss' as *;
+
+.faq-page {
+    padding: $spacing-xxl 0;
+    background-color: $color-light-bg;
+    text-align: center;
+
+    h1 {
+        font-size: 2.4rem;
+        color: $color-primary;
+        margin-bottom: $spacing-md;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+        color: $color-primary;
+        margin-bottom: $spacing-lg;
+    }
+
+    .section-subtitle {
+        font-size: 1.2rem;
+        color: $color-text-secondary;
+        margin-bottom: $spacing-xl;
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .faq-list {
+        max-width: 800px;
+        margin: 0 auto;
+        text-align: left;
+
+        details {
+            background: $color-surface;
+            border-radius: $border-radius-lg;
+            padding: $spacing-lg;
+            margin-bottom: $spacing-md;
+            box-shadow: $shadow-md;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+            &:hover {
+                transform: translateY(-4px);
+                box-shadow: $shadow-lg;
+            }
+
+            summary {
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+                font-weight: bold;
+                font-size: 1.1rem;
+                color: $color-title;
+
+                .faq-icon {
+                    margin-right: $spacing-md;
+                    font-size: 1.4rem;
+                    color: $color-primary;
+                }
+
+                .faq-question {
+                    flex-grow: 1;
+                }
+            }
+
+            p {
+                margin-top: $spacing-md;
+                color: $color-text-secondary;
+                font-size: 1rem;
+                line-height: 1.6;
+            }
+        }
+    }
+}

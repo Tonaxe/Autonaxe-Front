@@ -45,7 +45,7 @@
     padding: $spacing-sm $spacing-lg;
 
     &:hover {
-      background-color: lighten(white, 3%);
+      background-color: color.adjust(white, $lightness: 5%);
       transform: translateY(-2px);
     }
   }

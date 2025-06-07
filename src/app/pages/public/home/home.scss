@@ -1,4 +1,5 @@
-@use '../../../styles/index.scss' as *;
+@use '../../../../styles/index.scss' as *;
+@use 'sass:color';
 
 @keyframes fadeSlideUp {
   0% {
@@ -241,7 +242,7 @@
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 
     &:hover {
-      background-color: lighten(white, 3%);
+      background-color: color.adjust(white, $lightness: 3%);
       transform: translateY(-2px);
     }
   }
@@ -413,8 +414,8 @@
     font-weight: 600;
 
     &:hover {
-      background-color: lighten(white, 5%);
-      color: darken($color-primary, 5%);
+      background-color: color.adjust(white, $lightness: 5%);
+      color: color.adjust($color-primary, $lightness: -5%);
     }
   }
 }

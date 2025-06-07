@@ -1,17 +1,17 @@
 import { Component, AfterViewInit, ElementRef, Renderer2 } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { Footer } from '../../shared/footer/footer';
-import { Header } from '../../shared/header/header';
+import { Header } from '../../../shared/header/header';
+import { Footer } from '../../../shared/footer/footer';
 
 @Component({
-  selector: 'app-home',
+  selector: 'app-features',
   standalone: true,
-  templateUrl: './home.html',
-  styleUrls: ['./home.scss'],
-  imports: [CommonModule, Footer, Header]
+  imports: [CommonModule, Header, Footer],
+  templateUrl: './features.html',
+  styleUrls: ['./features.scss']
 })
-export class Home implements AfterViewInit {
-  constructor(private renderer: Renderer2, private el: ElementRef) { }
+export class Features implements AfterViewInit {
+  constructor(private renderer: Renderer2, private el: ElementRef) {}
 
   ngAfterViewInit(): void {
     this.observeScrollAnimations();

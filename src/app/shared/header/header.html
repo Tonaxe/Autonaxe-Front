@@ -7,10 +7,10 @@
     </div>
 
     <nav class="nav-links" aria-label="Navegación principal">
-      <a href="#features">Funcionalidades</a>
-      <a href="#how-it-works">Cómo funciona</a>
-      <a href="#faq">FAQ</a>
-      <a href="#contact">Ayuda</a>
+      <a routerLink="/features">Funcionalidades</a>
+      <a routerLink="/how-it-works">Cómo funciona</a>
+      <a routerLink="/faq">FAQ</a>
+      <a routerLink="/help">Ayuda</a>
     </nav>
 
     <div class="actions">
@@ -30,10 +30,10 @@
 
   <nav class="dropdown" [class.open]="isMenuOpen" id="mobileDropdown" aria-label="Menú móvil desplegable">
     <ul>
-      <li><a href="#features" (click)="toggleMenu()">Funcionalidades</a></li>
-      <li><a href="#how-it-works" (click)="toggleMenu()">Cómo funciona</a></li>
-      <li><a href="#faq" (click)="toggleMenu()">FAQ</a></li>
-      <li><a href="#contact" (click)="toggleMenu()">Ayuda</a></li>
+      <li><a routerLink="/features" (click)="toggleMenu()">Funcionalidades</a></li>
+      <li><a routerLink="/how-it-works" (click)="toggleMenu()">Cómo funciona</a></li>
+      <li><a routerLink="/faq" (click)="toggleMenu()">FAQ</a></li>
+      <li><a routerLink="/help" (click)="toggleMenu()">Ayuda</a></li>
     </ul>
 
     <div class="dropdown-buttons">

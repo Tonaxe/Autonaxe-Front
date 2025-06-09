@@ -1,26 +1,184 @@
 @use '../../../../styles/index.scss' as *;
 
-.login-container {
+.login-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: $spacing-xl $spacing-md;
+  background: $color-background;
+}
+
+.login-card {
   @include card;
-  max-width: 400px;
-  margin: $spacing-xl auto;
+  max-width: 540px;
+  width: 100%;
+  padding: $spacing-lm $spacing-lm;
   display: flex;
   flex-direction: column;
-  gap: $spacing-lg;
+  align-items: center;
+  text-align: center;
+  gap: $spacing-md;
 
-  h2 {
-    text-align: center;
+  .login-logo {
+    width: 150px;
+    height: 150px;
+    margin-bottom: $spacing-sm;
+  }
+
+  h1 {
+    font-size: 2rem;
     color: $color-primary;
   }
 
-  form {
-    display: flex;
-    flex-direction: column;
-    gap: $spacing-md;
+  .login-subtitle {
+    font-size: 0.95rem;
+    color: $color-text-secondary;
+    margin-bottom: $spacing-md;
   }
 
-  button[type='submit'] {
-    @extend .btn;
-    @extend .btn--primary;
+  form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-sm;
+
+    .form-group {
+      text-align: left;
+
+      label {
+        font-weight: 500;
+        margin-bottom: 0.5rem;
+        color: $color-text;
+        margin-top: $spacing-md;
+        display: inline-block;
+      }
+
+      .input-icon-wrapper {
+        position: relative;
+
+        i.material-icons,
+        i.material-icons-outlined {
+          position: absolute;
+          left: 0.75rem;
+          top: 50%;
+          transform: translateY(-50%);
+          color: $color-text-secondary;
+          font-size: 20px;
+          opacity: 0.6;
+          z-index: 1;
+        }
+
+        input {
+          width: 100%;
+          padding: 0.65rem 2.75rem 0.65rem 2.5rem;
+          border: 1px solid $color-border;
+          border-radius: $border-radius;
+          background: rgba(255, 255, 255, 0.85);
+          backdrop-filter: blur(4px);
+          font-size: 1rem;
+          color: $color-text;
+          transition: border 0.3s ease;
+
+          &::placeholder {
+            color: $color-text-secondary;
+            font-size: 0.95rem;
+          }
+
+          &.invalid {
+            border-color: $color-error;
+          }
+
+          &:focus {
+            border-color: $color-primary;
+            outline: none;
+            box-shadow: 0 0 0 2px rgba($color-primary, 0.1);
+          }
+        }
+
+        button {
+          position: absolute;
+          right: 1.5rem;
+          top: 50%;
+          transform: translateY(-50%);
+          background: transparent;
+          border: none;
+          padding: 0;
+          cursor: pointer;
+          height: 1.5rem;
+          width: 1.5rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: $color-text-secondary;
+
+          i {
+            font-size: 20px;
+          }
+        }
+      }
+
+
+      .error {
+        font-size: 0.85rem;
+        color: $color-error;
+        margin-top: 0.3rem;
+      }
+    }
+
+    .form-links-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 0.3rem;
+      font-size: 0.88rem;
+
+      .remember-me {
+        display: flex;
+        align-items: center;
+        gap: 0.4rem;
+      }
+
+      a {
+        color: $color-primary;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+
+    button[type='submit'] {
+      @extend .btn;
+      @extend .btn--primary;
+      margin-top: $spacing-md;
+      font-size: 0.95rem;
+      padding: 0.65rem 1.5rem;
+    }
+  }
+
+  .register-link,
+  .back-home {
+    font-size: 0.9rem;
+
+    a {
+      color: $color-primary;
+      text-decoration: none;
+      font-weight: 600;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .back-home {
+    margin-top: $spacing-xs;
+
+    a {
+      color: $color-text-secondary;
+      font-weight: 400;
+    }
   }
 }
